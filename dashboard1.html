@@ -25,49 +25,62 @@
         </nav>
                 
     </header>
-    <div class="container">
-        <div class="main-content">
-            <header>
-                <h1>Welcome, Name Surname</h1> 
-            </header>
-
-            <div class="stats">
+    <section class="dashboard-content">
+            <!-- Stats Column -->
+            <div class="column stats-column">
+                <h2>Your Stats</h2>
                 <div class="stat">
-                    <h3>My Donations</h3>
-                    <p>120 meals</p>
+                    <h3>Donations Made</h3>
+                    <p>120</p>
                 </div>
-                
                 <div class="stat">
                     <h3>Pending Offers</h3>
                     <p>3</p>
                 </div>
+                <div class="stat">
+                    <h3>Completed Deliveries</h3>
+                    <p>97</p>
+                </div>
             </div>
 
-            <div class="notifications">
-                <h2>Notifications</h2>
-                <div class="notification-item">
-                    <p><strong>Charity 1</strong> has express interest in your Offer!</p>
+            <!-- Notifications Column -->
+            <div class="column notifications-column">
+                <h2>Recent Notifications</h2>
+                <div class="notification">
+                    <p><strong>Charity 1</strong> has accepted your offer!</p>
                     <span class="date">2 hours ago</span>
                 </div>
-                <div class="notification-item">
-                    <p><strong>Charity 2</strong> just sent you a message!</p>
+                <div class="notification">
+                    <p>Your offer <strong>“Leftover Pasta Tray”</strong> is awaiting pickup confirmation.</p>
                     <span class="date">5 hours ago</span>
                 </div>
-                <div class="notification-item">
-                    <p><strong>Charity 3</strong> has received your delivery! </p>
+                <div class="notification">
+                    <p><strong>Charity 2</strong> has sent you a message!</p>
                     <span class="date">1 day ago</span>
                 </div>
             </div>
 
-            <div class="recent-activity">
-                <h2>Recent Activity</h2>
+            <!-- Pending Requests Column -->
+            <div class="column pending-requests-column">
+                <h2>Your Active Offers</h2>
                 <ul>
-                    <li><strong>Restaurant XYZ</strong> donated 50 meals to <strong>Charity ABC</strong></li>
-                    <li><strong>Restaurant DEF</strong> requested a donation.</li>
-                    <li><strong>Charity GHI</strong> received 30 meals from <strong>Restaurant MNO</strong>.</li>
+                    <li>
+                        <strong>25 servings of fresh salad</strong> 
+                        <span class="status pending">Pending</span>
+                    </li>
+                    <li>
+                        <strong>30 sandwiches</strong>
+                        <span class="status in-progress">Scheduled</span>
+                    </li>
+                    <li>
+                        <strong>15 servings of fruit salad</strong>  
+                        <span class="status delivered">Delivered</span>
+                    </li>
                 </ul>
             </div>
-        </div>
+        </section>
+
+        
     </div>
 </body>
 </html>
