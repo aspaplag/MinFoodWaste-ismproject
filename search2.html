@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Search">
+<meta name="author" content="Search">
+<title>Search</title>
+
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/search2.css">
+</head>
+
+<body>
+    <div class="root">
+        <div class="main-container">
+            <div class="container">
+            <header class="head">
+                <a target="_blank" href="homepage">
+                    <img class="logo" src="logo" alt="logo">
+                </a>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="homepage">Home</a></li>
+                        <li><a href="about us">About</a></li>
+                        <li><a href="Search">Search</a></li>
+                        <li><a href="post">Create Post</a></li>
+                        <li><a href="profile">Profile</a></li>
+                    </ul>
+                </nav>
+            </header>
+            </div>
+
+            <div class="filters">
+                <h2>Filters</h2>
+                    <div class="input-group">
+                        <label for="type">Post Type</label>
+                        <select id="type">
+                            <option value="offer">Offer</option>
+                            <option value="request">Request</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="area">Area</label>
+                        <select id="area">
+                            <option value="sterea">Στερέα Ελλάδα</option>
+                            <option value="peloponese">Πελοπόννησος</option>
+                            <option value="macedonia">Μακεδονία</option>
+                            <option value="epirus">Ήπειρος</option>
+                            <option value="thesalia">Θεσσαλία</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="amount">Amount (people)</label>
+                        <select id="amount">
+                            <option value="10">5 to 10</option>
+                            <option value="20" selected>10 to 20</option>
+                            <option value="30">20 to 30</option>
+                            <option value="40">30 to 40</option>
+                            <option value="50">40 to 50</option>
+                            <option value="plus">50 plus</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="foodgroups">Food Groups</label>
+                        <select id="foodgroups">
+                            <option value="carbs">Carbs</option>
+                            <option value="protein">Protein</option>
+                            <option value="vegetables">Vegetables</option>
+                            <option value="fruits">Fruits</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="pickup">Delivery Method</label>
+                        <select id="pickup">
+                            <option value="delivery">Delivery</option>
+                            <option value="pickups">Pick-up</option>
+                        </select>
+                    </div>
+
+                    <div class="calendar-box">
+                        <h2 class="calendar-title">Select a Date</h2>
+                        <input type="text" id="dateInput" placeholder="Select a date">
+                        <div class="calendar" id="calendar">
+                            <div class="header">
+                                <button id="prevBtn">&lt;</button>
+                                <h2 id="monthYear">Month Year</h2>
+                                <button id="nextBtn">&gt;</button>
+                            </div>
+                            <div class="days" id="daysContainer"></div>
+                        </div>
+                    </div>
+
+                    <button class="btn" id="startBtn">Show Results</button>
+                    <button class="btn stop" id="stopBtn">Clear All</button>
+                
+                </div>
+            </div>
+        </div>
+
+            <div class="feed">
+                <div class="post">
+                    <h3 class="post-title">Another Post</h3>
+                    <p class="post-meta">Posted on Nov 3, 2025 by <strong>Admin</strong></p>
+                    <p class="post-content">
+                        example etc.
+                    </p>
+                    <button class="post-btn">Read More</button>
+                </div>
+                <div class="post">
+                    <h3 class="post-title">Another Post</h3>
+                    <p class="post-meta">Posted on Nov 3, 2025 by <strong>Admin</strong></p>
+                    <p class="post-content">
+                        example etc.
+                    </p>
+                    <button class="post-btn">Read More</button>
+                </div>
+                <div class="post">
+                    <h3 class="post-title">Another Post</h3>
+                    <p class="post-meta">Posted on Nov 3, 2025 by <strong>Admin</strong></p>
+                    <p class="post-content">
+                        example etc.
+                    </p>
+                    <button class="post-btn">Read More</button>
+                </div>
+                <div class="post">
+                    <h3 class="post-title">Another Post</h3>
+                    <p class="post-meta">Posted on Nov 3, 2025 by <strong>Admin</strong></p>
+                    <p class="post-content">
+                        example etc.
+                    </p>
+                    <button class="post-btn">Read More</button>
+                </div>
+                <div class="post">
+                    <h3 class="post-title">Another Post</h3>
+                    <p class="post-meta">Posted on Nov 3, 2025 by <strong>Admin</strong></p>
+                    <p class="post-content">
+                        example etc.
+                    </p>
+                    <button class="post-btn">Read More</button>
+                </div>
+                <div class="post">
+                    <h3 class="post-title">Another Post</h3>
+                    <p class="post-meta">Posted on Nov 3, 2025 by <strong>Admin</strong></p>
+                    <p class="post-content">
+                        example etc.
+                    </p>
+                    <button class="post-btn">Read More</button>
+                </div>
+                <div class="post">
+                    <h3 class="post-title">Another Post</h3>
+                    <p class="post-meta">Posted on Nov 3, 2025 by <strong>Admin</strong></p>
+                    <p class="post-content">
+                        example etc.
+                    </p>
+                    <button class="post-btn">Read More</button>
+                </div><div class="post">
+                    <h3 class="post-title">Another Post</h3>
+                    <p class="post-meta">Posted on Nov 3, 2025 by <strong>Admin</strong></p>
+                    <p class="post-content">
+                        example etc.
+                    </p>
+                    <button class="post-btn">Read More</button>
+                </div>
+                <div class="post">
+                    <h3 class="post-title">Another Post</h3>
+                    <p class="post-meta">Posted on Nov 3, 2025 by <strong>Admin</strong></p>
+                    <p class="post-content">
+                        example etc.
+                    </p>
+                    <button class="post-btn">Read More</button>
+                </div>
+                <div class="post">
+                    <h3 class="post-title">Another Post</h3>
+                    <p class="post-meta">Posted on Nov 3, 2025 by <strong>Admin</strong></p>
+                    <p class="post-content">
+                        example etc.
+                    </p>
+                    <button class="post-btn">Read More</button>
+                </div>
+                <div class="post">
+                    <h3 class="post-title">Another Post</h3>
+                    <p class="post-meta">Posted on Nov 3, 2025 by <strong>Admin</strong></p>
+                    <p class="post-content">
+                        example etc.
+                    </p>
+                    <button class="post-btn">Read More</button>
+                </div>
+            </div>
+        
+    </div>
+    <script src="js/calendar.js"></script>
+
+</body>
+</html>
