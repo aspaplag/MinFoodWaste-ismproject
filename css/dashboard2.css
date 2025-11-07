@@ -3,6 +3,7 @@ body {
     display: flex;
     align-items: flex-start;
     background-color: #D9C6A5;
+    
 }
 
 .container{
@@ -30,7 +31,7 @@ body {
     gap: 16px;
 }
 
-.stat{
+.stat, .reqs{
    background: rgba(255,255,255,0.95);
     border-radius: 12px;
     border: 1px solid rgba(76,106,77,0.15);
@@ -40,6 +41,9 @@ body {
     max-height: 25%;    
     box-sizing: border-box;
     word-wrap: break-word;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .notifications-column{
@@ -52,15 +56,82 @@ body {
 
 
 .notif {
-   background: rgba(255,255,255,0.95);
-    border-radius: 12px;
-    border: 1px solid rgba(76,106,77,0.15);
-    padding: 1.2rem 1.2rem;
+   position: relative;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    border: 1px solid rgba(76, 106, 77, 0.15);
+    padding: 1rem 1.2rem;
+    
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(8px);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.3s ease;
+    cursor: pointer;
     color: var(--color-text);
-    width: 260px ;
-    max-height: 25%;    
-    box-sizing: border-box;
-    word-wrap: break-word;
-	
-    display:flex;
+   
+       
+}
+
+.notif h1{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin: 0; 
+}
+
+.notif p{
+    font-size: 0.9rem;
+    color: var(--color-text);
+    margin: 0;
+    line-height: 1.4;
+    opacity: 0.9;
+}
+.right-col {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.5rem;
+    display: flex;
+    gap: 16px;
+}
+
+
+
+.reqs h2 h3{
+    align-content: center;
+}
+
+.btn-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.5rem;
+    display: flex;
+    gap: 16px;
+}
+
+.btn{
+    background: var(--color-primary);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 0.9rem;
+    cursor: pointer;
+    font-size: 0.88rem;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background: var(--color-accent);
+    transform: translateY(-1px);
+}
+
+.btn-container{
+    background: rgba(255,255,255,0.95);
+    border-radius: 16px;
+    padding: 1.2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border: 1px solid rgba(76,106,77,0.15);
+    position: sticky;
+    padding: 1.5rem;
 }
