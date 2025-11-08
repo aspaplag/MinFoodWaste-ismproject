@@ -152,6 +152,12 @@ body {
   flex-grow: 1;
 }
 
+.button .a{
+  text-decoration: none;
+  color: white;
+  list-style: none;
+}
+
 .btn {
   background: var(--color-primary);
   color: #fff;
