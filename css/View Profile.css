@@ -1,1 +1,131 @@
-
+:root {
+    --color-primary: #4C6A4D; 
+    --color-secondary: #D9C6A5; 
+    --color-accent: #C16C3F; 
+    --color-bg: #D9C6A5; 
+    --color-text: #2E2E2E;
+  }
+  
+  body {
+    font-family: serif;
+    background: var(--color-bg);
+    color: var(--color-text);
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    margin: 0;
+  }
+  
+  .dashboard {
+    width: 95%;
+    max-width: 600px;
+    background: rgba(255,255,255,0.95);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15), 0 4px 12px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  header {
+    text-align: center;
+  }
+  
+  header h1 {
+    color: var(--color-primary);
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .dashboard-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profile-card {
+    width: 100%;
+    background: rgba(255,255,255,0.95);
+    border-radius: 16px;
+    padding: 30px 35px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .profile-field label {
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .profile-field input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--color-secondary);
+    border-radius: 12px;
+    font-size: 1em;
+    background: rgba(255,255,255,0.9);
+    color: var(--color-text);
+    transition: all 0.3s ease;
+  }
+  
+  .profile-field input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(76,106,77,0.25);
+  }
+  
+  .profile-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+  }
+  
+  .edit-btn {
+    background: var(--color-primary);
+    color: #fff;
+  }
+  
+  .edit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .settings-btn {
+    background: var(--color-accent);
+    color: #fff;
+  }
+  
+  .settings-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  @media (max-width: 480px) {
+    .dashboard {
+      padding: 25px;
+    }
+    .profile-card {
+      padding: 20px;
+    }
+    .profile-buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
