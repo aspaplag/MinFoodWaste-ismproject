@@ -4,11 +4,19 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+.content{
+  display: flex;
+  flex-direction: row;
+  column-gap: 16px;
+}
+
 .left-side {
     float: left;
-    width: 540px;
+    width: 400px;
     margin-left: 170px;
     margin-top: 90px;
+    display: flex;
+    flex-direction: column;
 }
 
 .chat-name {
@@ -20,6 +28,7 @@ body {
     margin: 8px 0;
     cursor: pointer;
     font-weight: 500;
+  
 }
 
 .chat-name:hover {
