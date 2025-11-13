@@ -1,49 +1,19 @@
-.body{
-    font-family: "Inter", sans-serif;
-
-}
-
-
-.menu {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.menu ul {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-  gap: 30px; 
-}
-
-
-.menu li {
-  position: relative;
-}
-
-
-.menu a {
-  text-decoration: none;
-  color: #F5F3EF; 
-  font-size: 1.5rem;
-  font-weight: 600;
-  letter-spacing: 0.3px;
-  padding: 8px 0;
-  transition: color 0.3s ease, border-color 0.3s ease;
-  border-bottom: 2px solid transparent;
-}
-
 .Post-Container {
   margin-top: 18vh;
   margin-left: 10vh;
 }
 
+.Post-Container h1 {
+  border: 0.5px solid #000;
+  padding: 15px; 
+  width: 78%;
+}
+
 .Post {
   background-color: rgb(222, 220, 220);
   width: 80%;
+  border: 0.5px solid #000;
+  padding: 15px; 
 }
 
 
