@@ -18,5 +18,38 @@
 
 
 .Post h3 {
-  margin-top: 5vh;
+  margin-top: 1vh;
 }
+
+
+.form-group {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; 
+}
+
+.form-input {
+    padding: 12px 16px;
+    width: 30%; 
+    font-size: 16px;
+}
+
+
+.radio-group { 
+  padding: 15px;
+}
+
+.form-title {
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.Takeaway {
+  padding: 15px; 
+}
+
+.form-actions {
+  padding: 15px;
+}
+
