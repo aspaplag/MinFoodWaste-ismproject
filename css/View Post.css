@@ -1,0 +1,30 @@
+.Post-Container {
+    margin: 10vh;
+    padding: 15px;
+}
+
+.Post {
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.Post h2 {
+    padding-left: 15px;
+}
+
+.Post h3 {
+    padding: 15px;
+}
+
+.form-actions {
+    padding: 15px;
+    text-align: center;
+}
+
+.form-actions button {
+    background-color: rgb(7, 79, 53);
+    color: #eeeecd;
+    height: 50px;
+    width: 80px;
+    border-radius: 15px;
+}
