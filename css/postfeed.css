@@ -1,8 +1,13 @@
+body{
+    
+background: linear-gradient(295deg,rgba(7, 79, 53) 20%, rgba(88, 133, 112) 35%, rgba(242, 242, 218) 65%, rgba(238, 238, 205) 80%);
+}
+
 .main-container {
-    display: flex;
+   display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: flex-start;
+    
     gap: 2rem;
     padding-top: 100px;
 }
@@ -17,7 +22,7 @@
     padding: 1.5rem;
     font-family: 'Butler';
     color: #032A1B;
-    
+    margin-left: 0.5rem;
 }
 
 .input-group {
@@ -32,7 +37,7 @@
     margin-bottom: 0.35rem;
     color: #032A1B;
     font-weight: bold;
-
+   
 }
 
 .input-group select,
@@ -48,7 +53,7 @@
 
 .input-group select:focus,
 #dateInput:focus {
-    border-color: var(--color-accent);
+    border-color: #032A1B;
     box-shadow: 0 0 0 3px rgba(193,108,63,0.25);
     outline: none;
 }
@@ -61,6 +66,7 @@
     margin-top: 1rem;
     border: 1px solid #032A1B;
     align-content: center;
+    width: 200px;
 }
 
 .calendar-title {
@@ -76,6 +82,7 @@
     border-radius: 8px;
     padding: 0.5rem;
     text-align: center;
+    
 }
 
 .calendar .header {
@@ -83,10 +90,11 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 0.5rem;
+    word-wrap: break-word;
 }
 
 .calendar .header button {
-    background: var(--color-primary);
+    background: #502f4c;
     border: none;
     color: white;
     border-radius: 50%;
@@ -98,7 +106,7 @@
 }
 
 .calendar .header button:hover {
-    background: ;
+    background: #351f32;
 }
 
 .days {
@@ -131,7 +139,7 @@
 }
 
 /* --- Buttons --- */
-.btn {
+.btn, .post-btn {
     width: 100%;
     padding: 0.65rem;
     margin-top: 0.6rem;
@@ -147,8 +155,42 @@
     background-color: #074f35;
 }
 
-.btn.stop { background-color: #502f4c; }
-.btn.stop:hover { background-color: var(#502f4c); }
-
-
 .btn:hover { background-color: #032A1B; }
+
+.btn.stop, .post-btn { background-color: #502f4c; }
+.btn.stop:hover, .post-btn:hover { background-color: #351f32; }
+
+.feed {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    padding-left: 1.5rem;
+    
+}
+
+.post{
+    border-radius: 12px;
+    border: 1px solid rgba(76,106,77,0.15);
+    padding: 1.2rem 1.2rem;
+    color: var(--color-text);
+    width: 260px ;
+    max-height: 25%;    
+    box-sizing: border-box;
+    word-wrap: break-word;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.post h3{
+    font-family: 'Butler';
+    font-size: 1.5rem;
+    font-weight:bold;
+    color:#032A1B;
+}
+
+.post p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #074f35;
+}
