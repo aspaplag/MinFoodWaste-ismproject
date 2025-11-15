@@ -15,6 +15,9 @@ body {
   padding: 15px; 
   width: 18%;
   border-radius: 20px;
+  font-family: 'Butler';
+  font-size: 1.8rem;
+
 }
 
 .Post {
@@ -30,6 +33,7 @@ body {
 .Post h2 {
   margin-top: 1vh;
   padding: 15px;
+  font-family: 'Butler';
 }
 
 
@@ -42,6 +46,7 @@ body {
 
 .form-label {
   font-size: 16px;
+  font-family: 'Butler';
 } 
 
 .form-input {
@@ -53,11 +58,13 @@ body {
 
 .radio-group { 
   padding: 15px;
+  font-family: 'Butler';
 }
 
 .form-title {
   padding: 15px;
   margin-top: 15px;
+  font-family:'Butler';
 }
 
 .Takeaway {

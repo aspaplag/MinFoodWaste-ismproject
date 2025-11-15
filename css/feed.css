@@ -2,7 +2,8 @@ body {
     font-family: "Inter", sans-serif;
     display: flex;
     align-items: flex-start;
-    background-color: #D9C6A5;
+    background: linear-gradient(295deg,rgba(7, 79, 53) 20%, rgba(88, 133, 112) 35%, rgba(242, 242, 218) 65%, rgba(238, 238, 205) 80%);
+
 }
 
 .main-container {
@@ -14,6 +15,7 @@ body {
     padding-top: 100px;
 }
 
+
 .filters {
     background: rgba(255,255,255,0.95);
     border-radius: 16px;
@@ -22,36 +24,39 @@ body {
     border: 1px solid rgba(76,106,77,0.15);
     position: sticky;
     padding: 1.5rem;
-    
+    font-family: 'Butler';
+    color: #032A1B;
 }
 
 .input-group {
     margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
+    
 }
 
 .input-group label {
-    font-size: 0.85rem;
+    font-size: 1rem;
     margin-bottom: 0.35rem;
-    color: var(--color-primary);
-    font-weight: 500;
+    color: #032A1B;
+    font-weight: bold;
+   
 }
 
 .input-group select,
 #dateInput {
     padding: 0.5rem 0.6rem;
-    border: 1px solid var(--color-secondary);
+    border: 1px solid rgb(7, 79, 53);
     border-radius: 8px;
     font-size: 0.9rem;
-    background-color: rgba(255,255,255,0.85);
-    color: var(--color-text);
+    background-color: white;
+    color: rgb(3, 42, 27);
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 .input-group select:focus,
 #dateInput:focus {
-    border-color: var(--color-accent);
+    border-color: #032A1B;
     box-shadow: 0 0 0 3px rgba(193,108,63,0.25);
     outline: none;
 }
@@ -62,15 +67,16 @@ body {
     border-radius: 12px;
     padding: 0.8rem;
     margin-top: 1rem;
-    border: 1px solid rgba(217,198,165,0.25);
+    border: 1px solid #032A1B;
     align-content: center;
+    width: 200px;
 }
 
 .calendar-title {
     text-align: center;
     font-size: 0.95rem;
     margin-bottom: 0.5rem;
-    color: var(--color-primary);
+    color: r;
     font-weight: 600;
 }
 
@@ -79,6 +85,7 @@ body {
     border-radius: 8px;
     padding: 0.5rem;
     text-align: center;
+    
 }
 
 .calendar .header {
@@ -86,10 +93,11 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 0.5rem;
+    word-wrap: break-word;
 }
 
 .calendar .header button {
-    background: var(--color-primary);
+    background: #502f4c;
     border: none;
     color: white;
     border-radius: 50%;
@@ -101,7 +109,7 @@ body {
 }
 
 .calendar .header button:hover {
-    background: var(--color-accent);
+    background: #351f32;
 }
 
 .days {
@@ -134,7 +142,7 @@ body {
 }
 
 /* --- Buttons --- */
-.btn {
+.btn, .post-btn {
     width: 100%;
     padding: 0.65rem;
     margin-top: 0.6rem;
@@ -144,13 +152,16 @@ body {
     font-weight: 500;
     cursor: pointer;
     transition: all 0.25s ease;
+    font-family: 'Butler';
+    font-weight: bold;
+    color: #eeeecd;
+    background-color: #074f35;
 }
 
-.btn.primary { background-color: var(--color-primary); color: #fff; }
-.btn.primary:hover { background-color: var(--color-accent); }
+.btn:hover { background-color: #032A1B; }
 
-.btn.stop { background-color: var(--color-accent); }
-.btn.stop:hover { background-color: #a9562f; }
+.btn.stop, .post-btn { background-color: #502f4c; }
+.btn.stop:hover, .post-btn:hover { background-color: #351f32; }
 
 .feed {
     display: flex;
@@ -163,31 +174,34 @@ body {
 }
 
 .post {
-    background: rgba(255,255,255,0.95);
     border-radius: 12px;
     border: 1px solid rgba(76,106,77,0.15);
-    padding: 1.2rem 1.2rem;
-    color: var(--color-text);
+    padding: 1rem 1rem;
     width: 260px ;
-    max-height: 25%;    
+    height: 300px;    
     box-sizing: border-box;
     word-wrap: break-word;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    
 }
 
-.post-btn {
-    background: var(--color-primary);
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    padding: 0.5rem 0.9rem;
-    cursor: pointer;
-    font-size: 0.88rem;
-    transition: background 0.3s, transform 0.2s;
+.post-meta{
+    font-size: 13px;
+    color:#074f35;
 }
 
-.post-btn:hover {
-    background: var(--color-accent);
-    transform: translateY(-1px);
+.post h3{
+    font-family: 'Butler';
+    font-size: 1.5rem;
+    font-weight:bold;
+    color:#032A1B;
+    
+}
+
+.post p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #074f35;
 }
 
 /* --- Responsive --- */

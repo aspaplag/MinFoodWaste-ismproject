@@ -163,7 +163,7 @@ background: linear-gradient(295deg,rgba(7, 79, 53) 20%, rgba(88, 133, 112) 35%, 
 .feed {
     display: flex;
     flex-direction: row;
-    gap: 16px;
+    gap: 20px;
     flex-wrap: wrap;
     padding-top: 100px;
     padding-left: 1.5rem;
