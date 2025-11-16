@@ -1,0 +1,144 @@
+body{
+    background: linear-gradient(295deg,rgba(7, 79, 53) 20%, rgba(88, 133, 112) 35%, rgba(242, 242, 218) 65%, rgba(238, 238, 205) 80%);
+    display: flex;
+    align-items: flex-start;
+    padding-top: 100px;
+}
+
+.container{
+    
+    display: flex;
+   flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.dashboard{
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    width: 30%;
+    align-items: center;
+}
+
+.dashboard h2, .activity h2, .more h2{
+    font-family: 'Butler';
+    font-size: 1.8rem;
+    font-weight: bolder;
+    color:#032A1B;
+}
+
+.dashboard h3, .cta-text{
+    font-family: 'Butler';
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color:#032A1B;
+    text-align: center;
+}
+
+.stats{   
+    padding: 1rem;
+    font-family: 'Butler';
+    color: #032A1B;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    font-weight: 600;
+    font-size: 1.5rem;
+    
+}
+
+.stat{
+    display: flex;
+    word-wrap: break-word;
+    flex-direction: column;
+     background: rgba(255,255,255,0.95);
+    border-radius: 16px;
+    padding:1.5rem;
+    margin:10px;
+     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.activity{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5rem;
+    font-family: 'Butler';
+    width:30%;
+}
+
+.notifications{
+    height: 70%;
+    overflow-y: auto;
+    scrollbar-color: #502f4c;
+    scrollbar-width: auto;
+}
+
+.notif{
+    background: rgba(255,255,255,0.95);
+    border-radius: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(255,255,255,0.95);
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin:1rem;
+}
+
+.notif-title{
+    font-family: 'Butler';
+    font-size: 1.2rem;
+    color:#032A1B;
+}
+
+.cta{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #074f35;
+}
+
+.notif-meta{
+    font-size: 13px;
+    color:#074f35;
+}
+
+.prof-info{
+    margin-left: 20px;
+    font-family:'Butler';
+    font-size: 2.5rem;
+    font-weight: bold;
+    color:#032A1B;
+}
+
+.btn{
+    
+    width: 60%;
+    padding: 0.65rem;
+    margin-top: 0.6rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    font-family: 'Butler';
+    font-weight: bold;
+    color: #eeeecd;
+    background-color: #502f4c;
+}
+
+.btn:hover { background-color: #351f32; }
+
+.more{
+    display:flex;
+    flex-direction: column;
+    width:30%;
+}
+
+.cta-cont{
+    
+    word-wrap: break-word;
+}
+
+.subtext{
+    font-family: Arial, Helvetica, sans-serif;
+}

@@ -1,5 +1,4 @@
 body {
-    font-family: "Inter", sans-serif;
     display: flex;
     align-items: flex-start;
     background: linear-gradient(295deg,rgba(7, 79, 53) 20%, rgba(88, 133, 112) 35%, rgba(242, 242, 218) 65%, rgba(238, 238, 205) 80%);
