@@ -1,3 +1,7 @@
+body {
+    background-color: #eeeecd;
+}
+
 .Post-Container {
     margin: 10vh;
     padding: 15px;
@@ -6,14 +10,24 @@
 .Post {
     border: 2px solid black;
     border-radius: 15px;
+    background-color: rgb(7, 79, 53);
+    width: 75%;
 }
 
 .Post h2 {
     padding-left: 15px;
+    text-align: center;
+    color: #eeeecd;
 }
 
 .Post h3 {
+    margin: 10px;
     padding: 15px;
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 20%;
+    background-color: #eeeecd;
+    color: rgb(3, 42, 27);
 }
 
 .form-actions {
@@ -22,9 +36,21 @@
 }
 
 .form-actions button {
-    background-color: rgb(7, 79, 53);
-    color: #eeeecd;
+    background-color: rgb(3, 42, 27);
+    color: white;
     height: 50px;
-    width: 80px;
+    width: 120px;
     border-radius: 15px;
 }
+
+.Description-Container {
+    background-color: rgb(7, 79, 53);
+    color: #eeeecd;
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 20%;
+    padding: 15px;
+    margin-top: 5px;
+}
+
+
