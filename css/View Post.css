@@ -1,5 +1,5 @@
 body {
-    background-color: #eeeecd;
+    background: linear-gradient(295deg,rgba(7, 79, 53) 20%, rgba(88, 133, 112) 35%, rgba(242, 242, 218) 65%, rgba(238, 238, 205) 80%);
 }
 
 .Post-Container {
@@ -35,13 +35,23 @@ body {
     text-align: center;
 }
 
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%; 
+}
+
 .form-actions button {
     background-color: rgb(3, 42, 27);
     color: white;
     height: 50px;
     width: 120px;
     border-radius: 15px;
+    display: inline-block;
+    text-align: center;
 }
+
 
 .Description-Container {
     background-color: rgb(7, 79, 53);
