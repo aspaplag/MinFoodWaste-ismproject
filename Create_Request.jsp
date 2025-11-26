@@ -34,10 +34,10 @@
                 <div class="Post-Caption">
                     <h2>What is your need today?</h2>
                 </div>
-                <form class="Post-Body">
+                <form action="requestController.jsp" method="POST" class="Post-Body">
                     <div class="form-group">
                         <label for="req_title" class="form-label"><b>Title</b></label>
-                        <input type="text" id="req_title" name="req_title" class="form-input" placeholder="Title" required>
+                        <input type="text" id="title" name="title" class="form-input" placeholder="Title" required>
                     </div>
 
                     <div class="form-group">
@@ -61,7 +61,7 @@
                         <div class="radio-group">
                             <input type="radio" id="low" name="urgency" value="Low">
                             <label for="html">Low</label><br>
-                            <input type="radio" id="css" name="urgency" value="Medium">
+                            <input type="radio" id="medium" name="urgency" value="Medium">
                             <label for="css">Medium</label><br>
                             <input type="radio" id="high" name="urgency" value="High">
                             <label for="javascript">High</label>
@@ -69,7 +69,7 @@
                     </form>
 
                     <form class="Takeaway">
-                        <input type="checkbox" id="takeaway1" name="takeaway1" value="Takeaway">
+                        <input type="checkbox" id="takeaway" name="takeaway" value="Takeaway">
                         <label for="takeaway1"><b>Take away option</b></label><br>
                     </form>
 
